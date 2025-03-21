@@ -1,0 +1,11 @@
+{
+	"name": "telephone-number-validator",
+	"version": "1.0.0",
+	"description": "Telephone Number Validator",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mayko Costa",
+	"license": "MIT"
+}
