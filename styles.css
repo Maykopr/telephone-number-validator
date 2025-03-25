@@ -91,7 +91,7 @@
 
 	--fs-container-xs: 2cqw;
 	--fs-container-s: 3cqw;
-	--fs-container-m: 4cqw;
+	--fs-container-m: 5.5cqi;
 	--fs-container-l: 8cqw;
 	--fs-container-xl: 16cqw;
 
@@ -110,29 +110,21 @@ body {
 }
 
 .app {
-	container-type: inline-size;
-	margin: var(--space-l) auto;
-	width: var(--width);
+	align-items: center;
 	aspect-ratio: var(--ratio3h);
-	padding: var(--sp-container-s);
-	display: flex;
-	flex-direction: column;
-	border-radius: var(--space-xl);
+	background-color: var(--dark);
+	background-image: radial-gradient(var(--dark) 50%, hsla(308, 100%, 50%, 0.303) 120%);
+	border-radius: var(--space-l);
+	border: 8px solid var(--dark);
 	box-shadow: var(--shadow) var(--dark);
 	color: var(--neutral-lighter);
-	background-color: var(--dark);
-}
-
-.screen {
-	flex: 1;
-	padding: var(--sp-container-l);
+	container-type: size;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: var(--dark);
-	border-radius: var(--space-xl);
 	gap: var(--space-m);
-	background-image: radial-gradient(var(--dark) 50%, hsla(308, 100%, 50%, 0.303) 120%);
+	margin: var(--space-l) auto;
+	padding: var(--sp-container-l);
+	width: var(--width);
 }
 
 .title {
@@ -151,7 +143,7 @@ body {
 	width: 100%;
 	background: hsla(33, 98%, 24%, 0.15);
 	border-radius: var(--space-l);
-	color: var(--secondary-lighter);
+	color: var(--neutral);
 	border-color: hsla(28, 100%, 50%, 0.5);
 	font-size: var(--fs-fixed-m);
 	box-shadow: 3px 3px 40px 0 hsla(28, 100%, 50%, 0.3);
@@ -169,7 +161,7 @@ body {
 }
 
 .form__results {
-	color: var(--secondary-lighter);
+	color: var(--neutral-lighter);
 	flex: 1;
 	font-size: var(--fs-container-m);
 	line-height: 1.8;
