@@ -23,7 +23,7 @@
 	--neutral-lighter: hsl(200, 0%, 80%);
 	--neutral-darker: hsl(200, 0%, 50%);
 
-	--primary: hsl(271, 100%, 14%);
+	--primary: hsl(271, 100%, 24%);
 	--primary-darker: hsl(271, 100%, 9%);
 	--primary-lighter: hsl(271, 100%, 24%);
 
@@ -102,7 +102,7 @@
 }
 
 body {
-	background-color: var(--secondary-lighter);
+	background-color: var(--neutral-lighter);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -115,12 +115,12 @@ body {
 	width: var(--width);
 	aspect-ratio: var(--ratio3h);
 	padding: var(--sp-container-s);
-	background-color: var(--dark);
 	display: flex;
 	flex-direction: column;
 	border-radius: var(--space-xl);
 	box-shadow: var(--shadow) var(--dark);
 	color: var(--neutral-lighter);
+	background-color: var(--dark);
 }
 
 .screen {
@@ -129,9 +129,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--primary);
+	background-color: var(--dark);
 	border-radius: var(--space-xl);
 	gap: var(--space-m);
+	background-image: radial-gradient(var(--dark) 50%, hsla(308, 100%, 50%, 0.303) 120%);
 }
 
 .title {
@@ -148,12 +149,12 @@ body {
 .form__input {
 	padding: var(--sp-container-s);
 	width: 100%;
-	background-color: transparent;
+	background: hsla(33, 98%, 24%, 0.15);
 	border-radius: var(--space-l);
 	color: var(--secondary-lighter);
-	box-shadow: 0 0 6px var(--secondary);
-	border-color: transparent;
+	border-color: hsla(28, 100%, 50%, 0.5);
 	font-size: var(--fs-fixed-m);
+	box-shadow: 3px 3px 40px 0 hsla(28, 100%, 50%, 0.3);
 }
 
 .form__input::placeholder {
@@ -168,9 +169,6 @@ body {
 }
 
 .form__results {
-	background-color: var(--primary-darker);
-	border-radius: var(--space-l);
-	box-shadow: 0 0 6px var(--secondary);
 	color: var(--secondary-lighter);
 	flex: 1;
 	font-size: var(--fs-container-m);
@@ -181,6 +179,14 @@ body {
 	text-align: center;
 	width: 100%;
 	word-wrap: break-word;
+	border-radius: var(--space-l);
+	box-shadow: 0 8px 32px var(--secondary);
+
+	background: hsla(33, 98%, 24%, 0.15);
+	box-shadow: 3px 4px 35px 0 hsla(28, 100%, 50%, 0.4);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid hsla(28, 100%, 50%, 0.4);
 }
 
 .pad-button {
@@ -193,16 +199,22 @@ body {
 	flex-grow: 1;
 	padding: var(--sp-container-s);
 	border-radius: var(--space-l);
-	color: var(--tertiary);
+	color: var(--neutral-light);
 	border: none;
 	font-size: var(--fs-fixed-m);
 	cursor: pointer;
 	background-image: linear-gradient(var(--secondary) 40%, var(--secondary-darker) 100%);
 	box-shadow: 0 0 5px inset var(--dark);
+
+	background: hsla(33, 100%, 48%, 0.355);
+	box-shadow: 3px 4px 35px 0 hsla(28, 100%, 50%, 0.4);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid hsla(28, 100%, 50%, 0.4);
 }
 
 @media screen and (hover: hover) {
 	button:hover {
-		background: var(--secondary-darker);
+		background: hsla(33, 100%, 48%, 0.6);
 	}
 }
