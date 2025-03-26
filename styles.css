@@ -178,6 +178,10 @@ body {
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	border: 1px solid hsla(28, 100%, 50%, 0.4);
+	scrollbar-color: hsla(28, 100%, 50%, 0.4) transparent;
+	scrollbar-width: thin;
+	padding-left: var(--sp-container-l);
+	scrollbar-gutter: stable;
 }
 
 .pad-button {
