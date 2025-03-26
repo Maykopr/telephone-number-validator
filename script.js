@@ -5,7 +5,7 @@ const resultDiv = document.getElementById("results-div");
 
 function checkNumber() {
 	const input = userInput.value;
-	const regex = /^[1 ]{0,2}\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}?/;
+	const regex = /^(?:1 |1)?(?:\(\d{3}\)|\d{3})[ -]?\d{3}[ -]?\d{4}$/;
 	if (input === "") {
 		alert("Please provide a phone number");
 	} else if (regex.test(input)) {
