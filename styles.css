@@ -116,7 +116,7 @@ body {
 	background-image: radial-gradient(var(--dark) 50%, hsla(308, 100%, 50%, 0.303) 120%);
 	border-radius: var(--space-l);
 	border: 8px solid var(--dark);
-	box-shadow: var(--shadow) var(--dark);
+	box-shadow: 8px 8px 32px var(--dark), -8px -8px 32px var(--light);
 	color: var(--neutral-lighter);
 	container-type: size;
 	display: flex;
@@ -165,7 +165,6 @@ body {
 	flex: 1;
 	font-size: var(--fs-container-m);
 	line-height: 1.8;
-	max-height: 80cqw;
 	overflow: auto;
 	padding: var(--sp-container-s);
 	text-align: center;
